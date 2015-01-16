@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css"href="bootstrap.min.css" >
+
+</head>
+<body>
+<div class="container">
+    <div class="row"><br>
+
+        <div class="col-md-4 col-md-offset-4">
+            <div class="well">
+
+                <div class="panel panel-info">
+                    <div class="panel-body">
+                <center><h3 class="panel panel-danger">
+                    <div class="panel-body">Calculator</div></h3></center>
+
+
+                <form method="post" action="calculator.php">
+
+                    <pre>First Number   </pre><input type="text" name="number1"><p>
+
+                    <pre>Second Number   </pre> <input type="text" name="number2"><p>
+
+                    </br>
+                    Choose the operation
+                    </br>
+                    </br>
+                    <input type="radio" name="op" value="add" checked>Addition
+                    <input type="radio" name="op" value="sub">Subtraction
+                    <input type="radio" name="op" value="mul">Multiplication
+                    <input type="radio" name="op" value="div"> Division<p>
+                    <div class="col-md-4 col-md-offset-4">
+                    <input type="submit" name="Submit" value="Submit"></div>
+
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>
