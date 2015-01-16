@@ -1,24 +1,24 @@
 <?php
 $number1=$_POST['number1'];
 $number2=$_POST['number2'];
-$op=$_POST['op'];
+$option=$_POST['option'];
 
-if ( $op == "add" ) {
+if ( $option == "add" ) {
     echo "$number1 + $number2 = ";
     echo $number1 + $number2;
 }
 
-if ( $op == "sub" ) {
+if ( $option == "sub" ) {
     echo "$number1 - $number2 = ";
     echo $number1 - $number2;
 }
 
-if ( $op == "mul" ) {
+if ( $option == "mul" ) {
     echo "$number1 * $number2 = ";
     echo $number1 * $number2;
 }
 
-if ( $op == "div" ) {
+if ( $option == "div" ) {
     echo "$number1 / $number2 = ";
     echo $number1 / $number2;
 }
