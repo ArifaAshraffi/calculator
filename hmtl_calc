@@ -18,7 +18,7 @@
                     <div class="panel-body">Calculator</div></h3></center>
 
 
-                <form method="post" action="calculator.php">
+                <form method="post" action="calculator_main.php">
 
                     <pre>First Number   </pre><input type="text" name="number1"><p>
 
@@ -28,10 +28,10 @@
                     Choose the operation
                     </br>
                     </br>
-                    <input type="radio" name="op" value="add" checked>Addition
-                    <input type="radio" name="op" value="sub">Subtraction
-                    <input type="radio" name="op" value="mul">Multiplication
-                    <input type="radio" name="op" value="div"> Division<p>
+                    <input type="radio" name="option" value="add" checked>Addition
+                    <input type="radio" name="option" value="sub">Subtraction
+                    <input type="radio" name="option" value="mul">Multiplication
+                    <input type="radio" name="option" value="div"> Division<p>
                     <div class="col-md-4 col-md-offset-4">
                     <input type="submit" name="Submit" value="Submit"></div>
 
