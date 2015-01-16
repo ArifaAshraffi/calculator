@@ -1,0 +1,26 @@
+<?php
+$number1=$_POST['number1'];
+$number2=$_POST['number2'];
+$option=$_POST['option'];
+
+if ( $option == "add" ) {
+    echo "Your Successful Addition of two entered number is : " ;
+    echo $number1 + $number2;
+}
+
+if ( $option == "sub" ) {
+    echo "Your Successful Subtraction of two entered number is : ";
+    echo $number1 - $number2;
+}
+
+if ( $option == "mul" ) {
+    echo "Your Successful Multiplication of two entered number is : ";
+    echo $number1 * $number2;
+}
+
+if ( $option == "div" ) {
+    echo "Your Successful Division of two entered number is : ";
+    echo $number1 / $number2;
+}
+
+?>
