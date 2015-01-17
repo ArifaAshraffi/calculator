@@ -1,0 +1,42 @@
+<?php
+
+
+    if (isset($operation) && ($_POST['operation']) == "add") {
+        $_SESSION['sum'] = $number1 + $number2;
+        header("location:calc_m.php");
+    }
+
+
+    if (isset($operation) && ($_POST['operation']) == "sub") {
+
+        if ($number1 < $number2) {
+            $_SESSION['sub_error'] = "Your First Number Must Be Grater Than Second Number.";
+            header("location:calc_m.php");
+        }
+        if ($number1 > $number2) {
+            $_SESSION['sub'] = $number1 - $number2;
+            header("location:calc_m.php");
+        }
+    }
+
+
+    if (isset($operation) && ($_POST['operation']) == "div") {
+
+        if ($number2 == 0) {
+            $_SESSION['div_error'] = "It is NOT Possible to Divide a Number BY Zero.";
+            header("location:calc_m.php");
+        } else {
+            $_SESSION['div'] = $number1 / $number2;
+            header("location:calc_m.php");
+        }
+    }
+
+
+    if (isset($operation) && ($_POST['operation']) == "multi") {
+
+        $_SESSION['multi'] = $number1 * $number2;
+        header("location:calc_m.php");
+    }
+
+
+    ?>
